@@ -80,9 +80,11 @@
     </div>
 
     <script>
-        function submitData() {
-            const scriptUrl = 'https://script.google.com/macros/s/xxxxxxxxxxxxxxxxxxxxx/exec'; // استبدل بهذا الرابط
-
+        function setSheetKeyManually() {
+  const newSheetId = '1Y6BcgW-Kg0eQ26gdT5CN1ygemxZBe5i6n6ac26spBMk'; // معرف الجدول الخاص بك
+  scriptProp.setProperty('key', newSheetId);
+  Logger.log('تم تحديث معرف الجدول يدويًا: ' + newSheetId);
+        }
             const name = document.getElementById('name').value;
             const age = document.getElementById('age').value;
             const address = document.getElementById('address').value;
